@@ -28,22 +28,22 @@
 		
 		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
 			<Label Content="Computer name:" Width="100"/>
-			<TextBox x:Name="dialgComputerName" Width="300" IsEnabled="False"/>
+			<TextBox x:Name="dialgComputerName" Width="300" IsEnabled="True"/>
 		</StackPanel>
 
 		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
 			<Label Content="IP adress:" Width="100"/>
-			<TextBox x:Name="dialgIPAdress" Width="300" IsEnabled="False"/>
+			<TextBox x:Name="dialgIPAdress" Width="300" IsEnabled="True"/>
 		</StackPanel>
   
 		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
 			<Label Content="Domain:" Width="100"/>
-			<TextBox x:Name="dialgDomain" Width="300" IsEnabled="False"/>
+			<TextBox x:Name="dialgDomain" Width="300" IsEnabled="True"/>
 		</StackPanel>
   
 		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
 			<Label Content="Patched:" Width="100"/>
-			<TextBox x:Name="dialgPatched" Width="300" IsEnabled="False"/>
+			<TextBox x:Name="dialgPatched" Width="300" IsEnabled="True"/>
 		</StackPanel>
   
 		<StackPanel Orientation="Horizontal" Margin="0,20,0,0">
