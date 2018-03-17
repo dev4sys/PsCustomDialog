@@ -30,9 +30,6 @@
 	
     <Grid Background="white">  
 
-
-
-
 		<StackPanel HorizontalAlignment="Center">
 
 			<!-- CONTAINER -->
@@ -43,10 +40,10 @@
                     OverridesDefaultStyle="True" CanUserAddRows="False">
                     <DataGrid.Columns>
 
-                        <DataGridTextColumn Binding="{Binding Hostname}" Header="Hostname" IsReadOnly="True" Width="auto"/>
+                        <DataGridTextColumn Binding="{Binding ComputerName}" Header="Computer Name" IsReadOnly="True" Width="auto"/>
                         <DataGridTextColumn Binding="{Binding IP_Adress}" Header="IP Adress" IsReadOnly="True" Width="auto"/>
-                        <DataGridTextColumn Binding="{Binding Status}" Header="Client Status" IsReadOnly="True" Width="auto"/>
-                        <DataGridTextColumn Binding="{Binding Patch}" Header="Patch Level" IsReadOnly="True" Width="auto"/>
+                        <DataGridTextColumn Binding="{Binding Domain}" Header="Client Domain" IsReadOnly="True" Width="auto"/>
+                        <DataGridTextColumn Binding="{Binding Patch}" Header="Patched" IsReadOnly="True" Width="auto"/>
 
                         <DataGridTemplateColumn>
                             <DataGridTemplateColumn.CellTemplate>
