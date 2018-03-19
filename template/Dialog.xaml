@@ -17,7 +17,7 @@
     <StackPanel Orientation="Vertical" Margin="0,5,0,0">
 
 
-		<Border BorderThickness="0" Grid.Row="0" Grid.ColumnSpan="2" CornerRadius="50,10,50,10" BorderBrush="Black" Background="#FF5A9AE0"
+		<Border x:Name="iconDialog" BorderThickness="0" Grid.Row="0" Grid.ColumnSpan="2" CornerRadius="50,10,50,10" BorderBrush="Black" Background="#FF5A9AE0"
 			Width="100" Height="50" Margin="0,5,0,10">
 			<Rectangle Width="25" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Fill="white">
 				<Rectangle.OpacityMask>
