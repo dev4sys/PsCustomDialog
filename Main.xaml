@@ -21,13 +21,9 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+
     </Window.Resources>
 
-
-
-
-
-	
     <Grid Background="white">  
 
 		<StackPanel HorizontalAlignment="Center">
@@ -38,6 +34,17 @@
                 <DataGrid x:Name="gridLogs" AutoGenerateColumns="False" Margin="33,0,0,0"
                     GridLinesVisibility="All" HorizontalGridLinesBrush="#FFD4D4D4"  VerticalGridLinesBrush="#FFD4D4D4" 
                     OverridesDefaultStyle="True" CanUserAddRows="False">
+					
+					<DataGrid.RowStyle>
+						<Style TargetType="DataGridRow">
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding Patch}" Value="True">
+									<Setter Property="Background" Value="#98FB98" />
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</DataGrid.RowStyle>
+					
                     <DataGrid.Columns>
 
                         <DataGridTextColumn Binding="{Binding ComputerName}" Header="Computer Name" IsReadOnly="True" Width="auto"/>
